@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/header.js":
-/*!***********************!*\
-  !*** ./src/header.js ***!
-  \***********************/
+/***/ "./src/nav.js":
+/*!********************!*\
+  !*** ./src/nav.js ***!
+  \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader(param) {\n\n\n    const header = document.createElement('header');\n\n    param.appendChild(header)\n\n    return header ;\n\n}\n\n\n\n//# sourceURL=webpack://repos/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNav)\n/* harmony export */ });\nfunction createNav(param) {\n    const nav = document.createElement('nav');\n\n    // Creating the Nav buttons and assigning a class to each one\n    const homeBtn = document.createElement('button');\n    homeBtn.classList.add('home-button');\n\n    const aboutUsBtn = document.createElement('button');\n    aboutUsBtn.classList.add('about-us-button');\n\n    const ourServicesBtn = document.createElement('button');\n    ourServicesBtn.classList.add('our-services-button');\n\n    const contactUsBtn = document.createElement('button');\n    contactUsBtn.classList.add('contact-us-button');\n\n    // Adding text in button boxes\n    homeBtn.innerText = 'HOME';\n    aboutUsBtn.innerText = 'ABOUT US';\n    ourServicesBtn.innerText = 'OUR SERVICES';\n    contactUsBtn.innerText = 'CONTACT US';\n\n    nav.appendChild(homeBtn);\n    nav.appendChild(aboutUsBtn);\n    nav.appendChild(ourServicesBtn);\n    nav.appendChild(contactUsBtn);\n\n    param.appendChild(nav);\n\n    return  nav ;\n\n}\n\n//# sourceURL=webpack://repos/./src/nav.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/header.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/nav.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;

@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"#header-logo{\\n    height: 50vh;\\n    width: 50vw;\\n\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://repos/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"*, ::after, ::before {\\n    box-sizing: border-box;\\n}\\n\\n:root {\\n    --page-background-color: #ced4da;\\n    --logo-background-color: #212529;\\n    --logo-text-color: #dc2f02;\\n    --general-text-color: #161a1d;\\n\\n}\\n\\nbody {\\n    display: flex;\\n    height: 100vh;\\n    width: 100vw;\\n    margin: 0;\\n    padding: 0;\\n\\n}\\n\\n.main-logo-div{\\n    background-color: var(--logo-background-color);\\n\\n}\\n\\n#content {\\n    height: 100%;\\n    width: 100%;\\n    display: flex;\\n}\\n\\nheader {\\n    display: flex;\\n    align-items: center;\\n    justify-content: center;\\n    flex: 1 1 auto;\\n    border: 2px solid black;\\n}\\n\\nnav {\\n    display: flex;\\n    align-items: flex-start;\\n    justify-content: end;\\n    flex: 1 1 auto;\\n    border: 2px solid black;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://repos/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -110,13 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/div.js":
+/*!********************!*\
+  !*** ./src/div.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createDiv)\n/* harmony export */ });\nfunction createDiv(className) {\n    const div = document.createElement('div');\n    div.classList.add(className);\n    return div ;\n}\n\n//# sourceURL=webpack://repos/./src/div.js?");
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader(param){\n\n   \n    const header = document.createElement('header');\n    const nav = document.createElement('nav');\n\n    param.appendChild(header)\n    param.appendChild(nav);\n\n    return { header, nav };\n\n}\n\n\n\n//# sourceURL=webpack://repos/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader(param) {\n\n\n    const header = document.createElement('header');\n\n    param.appendChild(header)\n\n    return header ;\n\n}\n\n\n\n//# sourceURL=webpack://repos/./src/header.js?");
 
 /***/ }),
 
@@ -126,7 +136,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/logo.png */ \"./src/img/logo.png\");\n\n\n\n\nconst website = (() => {\n    const content = document.getElementById('content');\n    const h1 = document.createElement('h1');\n    const mainLogo = new Image();\n    mainLogo.src = _img_logo_png__WEBPACK_IMPORTED_MODULE_2__;\n    mainLogo.id = 'header-logo';\n\n    h1.textContent = 'TEST';\n    (0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(content);\n    const header = document.querySelector('header');\n    header.appendChild(h1);\n    header.appendChild(mainLogo);\n    \n\n\n    return { content };\n\n\n})();\n\nconsole.log('213123');\n\n// console.log(content);\n\n//# sourceURL=webpack://repos/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _div__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./div */ \"./src/div.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/logo.png */ \"./src/img/logo.png\");\n\n\n\n\n\n\nconst website = (() => {\n    const content = document.getElementById('content');\n    const mainLogo = new Image();  // Logo of the rest page that will use\n    mainLogo.src = _img_logo_png__WEBPACK_IMPORTED_MODULE_4__;\n    mainLogo.id = 'index-logo';\n\n    const header = (0,_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(content);\n    const nav = (0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(header);\n\n    const mainLogoDiv = (0,_div__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('main-logo-div'); // Div for index logo\n    content.appendChild(mainLogoDiv);\n    mainLogoDiv.appendChild(mainLogo);\n    \n    const mainContentDiv = (0,_div__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('main-content-div');\n    mainContentDiv.appendChild(header);\n    content.appendChild(mainContentDiv);\n\n    \n\n\n\n\n    return { content };\n\n\n})();\n\nconsole.log('213123');\n\n// console.log(content);\n\n//# sourceURL=webpack://repos/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/nav.js":
+/*!********************!*\
+  !*** ./src/nav.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNav)\n/* harmony export */ });\nfunction createNav(param) {\n    const nav = document.createElement('nav');\n\n    // Creating the Nav buttons and assigning a class to each one\n    const homeBtn = document.createElement('button');\n    homeBtn.classList.add('home-button');\n\n    const aboutUsBtn = document.createElement('button');\n    aboutUsBtn.classList.add('about-us-button');\n\n    const ourServicesBtn = document.createElement('button');\n    ourServicesBtn.classList.add('our-services-button');\n\n    const contactUsBtn = document.createElement('button');\n    contactUsBtn.classList.add('contact-us-button');\n\n    // Adding text in button boxes\n    homeBtn.innerText = 'HOME';\n    aboutUsBtn.innerText = 'ABOUT US';\n    ourServicesBtn.innerText = 'OUR SERVICES';\n    contactUsBtn.innerText = 'CONTACT US';\n\n    nav.appendChild(homeBtn);\n    nav.appendChild(aboutUsBtn);\n    nav.appendChild(ourServicesBtn);\n    nav.appendChild(contactUsBtn);\n\n    param.appendChild(nav);\n\n    return  nav ;\n\n}\n\n//# sourceURL=webpack://repos/./src/nav.js?");
 
 /***/ }),
 
@@ -136,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hea
   \**************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"75b09fd90e5babd101bf.png\";\n\n//# sourceURL=webpack://repos/./src/img/logo.png?");
+eval("module.exports = __webpack_require__.p + \"8ca4585c9aee994584ae.png\";\n\n//# sourceURL=webpack://repos/./src/img/logo.png?");
 
 /***/ })
 

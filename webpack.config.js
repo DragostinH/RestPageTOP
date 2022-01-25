@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         index: './src/index.js',
         header: './src/header.js',
+        nav:'./src/nav.js',
 
     },
     output: {

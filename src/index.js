@@ -1,20 +1,29 @@
 import createHeader from "./header";
+import createNav from "./nav";
+import createDiv from "./div";
 import './style.css';
 import Logo from './img/logo.png';
 
 const website = (() => {
     const content = document.getElementById('content');
-    const h1 = document.createElement('h1');
-    const mainLogo = new Image();
+    const mainLogo = new Image();  // Logo of the rest page that will use
     mainLogo.src = Logo;
-    mainLogo.id = 'header-logo';
+    mainLogo.id = 'index-logo';
 
-    h1.textContent = 'TEST';
-    createHeader(content);
-    const header = document.querySelector('header');
-    header.appendChild(h1);
-    header.appendChild(mainLogo);
+    const header = createHeader(content);
+    const nav = createNav(header);
+
+    const mainLogoDiv = createDiv('main-logo-div'); // Div for index logo
+    content.appendChild(mainLogoDiv);
+    mainLogoDiv.appendChild(mainLogo);
     
+    const mainContentDiv = createDiv('main-content-div');
+    mainContentDiv.appendChild(header);
+    content.appendChild(mainContentDiv);
+
+    
+
+
 
 
     return { content };

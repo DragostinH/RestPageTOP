@@ -11,12 +11,13 @@ const website = (() => {
     mainLogo.id = 'index-logo';
 
     const header = createHeader(content);
+    header.classList.add('main-header')
     const nav = createNav(header);
 
     const mainLogoDiv = createDiv('main-logo-div'); // Div for index logo
     content.appendChild(mainLogoDiv);
     mainLogoDiv.appendChild(mainLogo);
-    
+
     const mainContentDiv = createDiv('main-content-div');
     mainContentDiv.appendChild(header);
     content.appendChild(mainContentDiv);
@@ -31,6 +32,5 @@ const website = (() => {
 
 })();
 
-console.log('213123');
 
 // console.log(content);

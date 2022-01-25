@@ -1,9 +1,10 @@
 *, ::after, ::before {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-    --page-background-color: #ced4da;
+    --page-background-color: #e3e5e9;
     --logo-background-color: #212529;
     --logo-text-color: #dc2f02;
     --general-text-color: #161a1d;
@@ -19,9 +20,32 @@ body {
 
 }
 
-.main-logo-div{
+.main-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
     background-color: var(--logo-background-color);
 
+}
+
+.main-content-div {
+    background-color: var(--page-background-color);
+    flex: 1 1 auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button {
+    background-color: var(--page-background-color);
+    border: none;
+    padding: 0.5em;
+    margin: 1em;
+    font-weight: 400;
 }
 
 #content {
@@ -31,17 +55,12 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 auto;
+
     border: 2px solid black;
 }
 
-nav {
-    display: flex;
-    align-items: flex-start;
-    justify-content: end;
-    flex: 1 1 auto;
-    border: 2px solid black;
+
+nav button:hover{
+    color: var(--logo-text-color);
+    cursor: pointer;
 }

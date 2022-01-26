@@ -3,10 +3,12 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        index: './src/index.js',
+        index: './src/website.js',
         header: './src/header.js',
         nav: './src/nav.js',
         div: './src/div.js',
+        section: './src/section.js',
+        footer: './src/footer.js',
 
     },
     output: {

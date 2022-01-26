@@ -5,7 +5,7 @@ export default function createHeader(param) {
 
     param.appendChild(header)
 
-    return header ;
+    return header;
 
 }
 

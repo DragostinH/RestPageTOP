@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/nav.js":
+/***/ "./src/div.js":
 /*!********************!*\
-  !*** ./src/nav.js ***!
+  !*** ./src/div.js ***!
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNav)\n/* harmony export */ });\nfunction createNav(param) {\n    const nav = document.createElement('nav');\n\n    // Creating the Nav buttons and assigning a class to each one\n    const homeBtn = document.createElement('button');\n    homeBtn.id = 'home-button';\n\n    const aboutUsBtn = document.createElement('button');\n    aboutUsBtn.id = 'about-us-button';\n\n    const menuBtn = document.createElement('button');\n    menuBtn.id = 'menu-button';\n\n    const contactUsBtn = document.createElement('button');\n    contactUsBtn.id = 'contact-us-button';\n\n    // Adding text in button boxes\n    homeBtn.innerText = 'HOME';\n    aboutUsBtn.innerText = 'ABOUT US';\n    menuBtn.innerText = 'MENU';\n    contactUsBtn.innerText = 'CONTACT US';\n\n    nav.appendChild(homeBtn);\n    nav.appendChild(aboutUsBtn);\n    nav.appendChild(menuBtn);\n    nav.appendChild(contactUsBtn);\n\n    param.appendChild(nav);\n\n    return { nav, homeBtn, aboutUsBtn, menuBtn, contactUsBtn };\n\n}\n\n//# sourceURL=webpack://repos/./src/nav.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createDiv)\n/* harmony export */ });\nfunction createDiv(className) {\n    const div = document.createElement('div');\n    div.classList.add(className);\n    return div ;\n}\n\n//# sourceURL=webpack://repos/./src/div.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/nav.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/div.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;

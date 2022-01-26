@@ -20,7 +20,13 @@ body {
 
 }
 
-.main-logo-div {
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#main-logo-div {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +35,11 @@ body {
 
 }
 
-.main-content-div {
+#main-content-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
     background-color: var(--page-background-color);
     flex: 1 1 auto;
 }
@@ -46,19 +56,44 @@ nav button {
     padding: 0.5em;
     margin: 1em;
     font-weight: 400;
+    font-size: medium;
 }
 
-#content {
-    height: 100%;
-    width: 100%;
+h1{
+    font-size: 40px;
+}
+
+article{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 75%;
+    line-height: 1.5em;
 }
 
-header {
-
-    border: 2px solid black;
+.page-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--page-background-color);
+    text-align: center;
+    width: 100%;
+    background-color: var(--logo-background-color);
 }
 
+.page-footer img{
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+/* EFFECTS ---------------------------------- */
 
 nav button:hover{
     color: var(--logo-text-color);

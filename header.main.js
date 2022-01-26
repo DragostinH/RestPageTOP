@@ -16,7 +16,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader(param) {\n\n\n    const header = document.createElement('header');\n\n    param.appendChild(header)\n\n    return header ;\n\n}\n\n\n\n//# sourceURL=webpack://repos/./src/header.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader(param) {\n\n\n    const header = document.createElement('header');\n\n    param.appendChild(header)\n\n    return header;\n\n}\n\n\n\n//# sourceURL=webpack://repos/./src/header.js?");
 
 /***/ })
 

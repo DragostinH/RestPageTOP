@@ -99,3 +99,27 @@ nav button:hover{
     color: var(--logo-text-color);
     cursor: pointer;
 }
+
+.carousel{
+    background-position: center;
+    /* background-size: cover; */
+    z-index: -1;
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+}
+
+.fade{
+
+    -webkit-animation: 1.5s fade;
+    animation: 1.5s fade;
+
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}

@@ -150,16 +150,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/contactUs.js":
-/*!**************************!*\
-  !*** ./src/contactUs.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ contactUs)\n/* harmony export */ });\n/* harmony import */ var _div__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./div */ \"./src/div.js\");\n\n\nfunction contactUs(param) {\n    \n    const iFrm = document.createElement('iframe');\n    iFrm.setAttribute(\"src\", \"https://www.google.com/maps/embed/v1/place?key=AIzaSyBfN0u00w29owauiATlua00usxoCDj2VPU&q=Space+Needle,Seattle+WA\");\n    iFrm.style = \"border:0\";\n    iFrm.loading = \"lazy\";\n    const iFrameDiv = (0,_div__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n    iFrameDiv.id = 'iframe';\n    iFrameDiv.appendChild(iFrm);\n\n    param.insertBefore(iFrameDiv, param.firstChild);\n\n\n    return {contactUs }\n\n\n\n}\n\n//# sourceURL=webpack://repos/./src/contactUs.js?");
-
-/***/ }),
-
 /***/ "./src/div.js":
 /*!********************!*\
   !*** ./src/div.js ***!
@@ -180,16 +170,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/header.js":
-/*!***********************!*\
-  !*** ./src/header.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createHeader)\n/* harmony export */ });\nfunction createHeader(param) {\n\n\n    const header = document.createElement('header');\n\n    param.insertBefore(header, param.firstChild)\n\n    return header;\n\n}\n\n\n\n//# sourceURL=webpack://repos/./src/header.js?");
-
-/***/ }),
-
 /***/ "./src/imagesArray.js":
 /*!****************************!*\
   !*** ./src/imagesArray.js ***!
@@ -197,36 +177,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ getImagesArray)\n/* harmony export */ });\n/* harmony import */ var _img_Menu_cooking_sushi1_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/Menu/cooking-sushi1.jpg */ \"./src/img/Menu/cooking-sushi1.jpg\");\n/* harmony import */ var _img_Menu_cooking_sushi2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/Menu/cooking-sushi2.jpg */ \"./src/img/Menu/cooking-sushi2.jpg\");\n/* harmony import */ var _img_Menu_cooking_sushi3_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img/Menu/cooking-sushi3.jpg */ \"./src/img/Menu/cooking-sushi3.jpg\");\n/* harmony import */ var _img_Menu_cooking_ramen1_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./img/Menu/cooking-ramen1.jpg */ \"./src/img/Menu/cooking-ramen1.jpg\");\n/* harmony import */ var _img_Menu_cooking_ramen2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./img/Menu/cooking-ramen2.jpg */ \"./src/img/Menu/cooking-ramen2.jpg\");\n/* harmony import */ var _img_Menu_cooking_ramen3_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/Menu/cooking-ramen3.jpg */ \"./src/img/Menu/cooking-ramen3.jpg\");\n\n\n\n\n\n\n\n\nfunction getImagesArray() {\n\n    const cookingSushi1 = new Image();\n    cookingSushi1.src = _img_Menu_cooking_sushi1_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n    const cookingSushi2 = new Image();\n    cookingSushi2.src = _img_Menu_cooking_sushi2_jpg__WEBPACK_IMPORTED_MODULE_1__;\n\n    const cookingSushi3 = new Image();\n    cookingSushi3.src = _img_Menu_cooking_sushi3_jpg__WEBPACK_IMPORTED_MODULE_2__;\n\n    const cookingRamen1 = new Image();\n    cookingRamen1.src = _img_Menu_cooking_ramen1_jpg__WEBPACK_IMPORTED_MODULE_3__;\n\n    const cookingRamen2 = new Image();\n    cookingRamen2.src = _img_Menu_cooking_ramen2_jpg__WEBPACK_IMPORTED_MODULE_4__;\n\n    const cookingRamen3 = new Image();\n    cookingRamen3.src = _img_Menu_cooking_ramen3_jpg__WEBPACK_IMPORTED_MODULE_5__;\n\n    const images = [cookingSushi1.src, cookingSushi2.src, cookingSushi3.src, cookingRamen1.src, cookingRamen2.src, cookingRamen3.src];\n\n    return images;\n\n}\n\n//# sourceURL=webpack://repos/./src/imagesArray.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./img/logo.png */ \"./src/img/logo.png\");\n/* harmony import */ var _article__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./article */ \"./src/article.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _div__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./div */ \"./src/div.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _carousel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./carousel */ \"./src/carousel.js\");\n\n\n\n\n\n\n\n\nfunction home(param) {\n    const mainContentDiv = document.getElementById('main-content-div'); //Container for right side of website\n    const article = (0,_article__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(mainContentDiv); //Wrapper for text inside main-content-div\n    const footer = (0,_footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(mainContentDiv);\n    \n    (0,_carousel__WEBPACK_IMPORTED_MODULE_6__[\"default\"])(param);\n    param.appendChild(mainContentDiv);\n\n\n\n\n\n    // Text inside the page\n    article.headline.innerText = 'Welcome';\n    article.section.innerText = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ducimus dicta natus totam odit maiores repudiandae assumenda excepturi sit soluta molestiae dolorem amet perferendis quo, libero at, doloremque reprehenderit. Voluptatibus.';\n\n    return { home };\n};\n\n\n// console.log(content);\n\n//# sourceURL=webpack://repos/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/nav.js":
-/*!********************!*\
-  !*** ./src/nav.js ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createNav)\n/* harmony export */ });\n/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/logo.png */ \"./src/img/logo.png\");\n\nfunction createNav(param) {\n    const logoIcon = new Image();\n    logoIcon.id = 'nav-logo';\n    logoIcon.src = _img_logo_png__WEBPACK_IMPORTED_MODULE_0__;\n    const nav = document.createElement('nav');\n\n\n\n    // Creating the Nav buttons and assigning a class to each one\n    const homeBtn = document.createElement('button');\n    homeBtn.id = 'home-button';\n\n    const aboutUsBtn = document.createElement('button');\n    aboutUsBtn.id = 'about-us-button';\n\n    const menuBtn = document.createElement('button');\n    menuBtn.id = 'menu-button';\n\n    const contactUsBtn = document.createElement('button');\n    contactUsBtn.id = 'contact-us-button';\n\n    // Adding text in button boxes\n    homeBtn.innerText = 'HOME';\n    aboutUsBtn.innerText = 'ABOUT US';\n    menuBtn.innerText = 'MENU';\n    contactUsBtn.innerText = 'CONTACT US';\n\n    nav.appendChild(logoIcon);\n    nav.appendChild(homeBtn);\n    nav.appendChild(aboutUsBtn);\n    nav.appendChild(menuBtn);\n    nav.appendChild(contactUsBtn);\n\n\n    param.appendChild(nav);\n\n    return { nav, homeBtn, aboutUsBtn, menuBtn, contactUsBtn };\n\n}\n\n//# sourceURL=webpack://repos/./src/nav.js?");
-
-/***/ }),
-
-/***/ "./src/website.js":
-/*!************************!*\
-  !*** ./src/website.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! . */ \"./src/index.js\");\n/* harmony import */ var _aboutUs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./aboutUs */ \"./src/aboutUs.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n/* harmony import */ var _contactUs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contactUs */ \"./src/contactUs.js\");\n\n\n\n\n\n\nconst webste = (() => {\n    const content = document.getElementById('content');\n    const mainContentDiv = document.getElementById('main-content-div'); // Right side content on each page\n    const header = (0,_header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(mainContentDiv); //Creating the header to add to the main content Div\n    const nav = (0,_nav__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(header); // ADding the nav bar in the header container\n    (0,___WEBPACK_IMPORTED_MODULE_0__[\"default\"])(content); //Loading the main page with each load of the website.\n\n    // All 4 nav buttons for the page.\n    const homeBtn = document.getElementById('home-button')\n    const aboutUsBtn = document.getElementById('about-us-button');\n    const menuBtn = document.getElementById('menu-button');\n    const contactUsBtn = document.getElementById('contact-us-button');\n\n\n    // Listeners for each button to change the page.\n\n    homeBtn.onclick = () => {\n        // Remove all children under the content div apart from the header\n        Array.from(mainContentDiv.childNodes).filter(child => {\n            if (child !== header) {\n                mainContentDiv.removeChild(child);\n            }\n        });\n\n        content.removeChild(content.firstElementChild);\n\n        (0,___WEBPACK_IMPORTED_MODULE_0__[\"default\"])(content);\n    }\n    aboutUsBtn.onclick = () => {\n        // Remove all children under the content div apart from the header\n        Array.from(mainContentDiv.childNodes).filter(child => {\n            if (child !== header) {\n                mainContentDiv.removeChild(child);\n            }\n        });\n\n        // Remove previous image\n        content.removeChild(content.firstElementChild);\n        (0,_aboutUs__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(content);\n\n    }\n    menuBtn.onclick = () => {\n        // Remove all children under the content div apart from the header\n        Array.from(mainContentDiv.childNodes).filter(child => {\n            if (child !== header) {\n                mainContentDiv.removeChild(child);\n            }\n        });\n\n        // Remove previous image\n        content.removeChild(content.firstElementChild);\n        menu(content);\n    }\n    contactUsBtn.onclick = () => {\n        // Remove all children under the content div apart from the header\n        Array.from(mainContentDiv.childNodes).filter(child => {\n            if (child !== header) {\n                mainContentDiv.removeChild(child);\n            }\n        });\n\n        // Remove previous image\n        content.removeChild(content.firstElementChild);\n        (0,_contactUs__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(content);\n    }\n\n})();\n\n//# sourceURL=webpack://repos/./src/website.js?");
 
 /***/ }),
 
@@ -430,7 +380,7 @@ eval("module.exports = __webpack_require__.p + \"8ca4585c9aee994584ae.png\";\n\n
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"index": 0
+/******/ 			"aboutUs": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -453,7 +403,7 @@ eval("module.exports = __webpack_require__.p + \"8ca4585c9aee994584ae.png\";\n\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/website.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/aboutUs.js");
 /******/ 	
 /******/ })()
 ;

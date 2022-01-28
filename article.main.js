@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/div.js":
-/*!********************!*\
-  !*** ./src/div.js ***!
-  \********************/
+/***/ "./src/article.js":
+/*!************************!*\
+  !*** ./src/article.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createDiv)\n/* harmony export */ });\nfunction createDiv() {\n    const div = document.createElement('div');\n    return div;\n}\n\n//# sourceURL=webpack://repos/./src/div.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createArticle)\n/* harmony export */ });\nfunction createArticle(param) {\n\n    const article = document.createElement('article');\n    const headline = document.createElement('h1');\n    const section = document.createElement('section');\n    article.appendChild(headline);\n    article.appendChild(section);\n    param.appendChild(article);\n    return { article, headline, section };\n\n}\n\n//# sourceURL=webpack://repos/./src/article.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/div.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/article.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;

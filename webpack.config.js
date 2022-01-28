@@ -7,8 +7,13 @@ module.exports = {
         header: './src/header.js',
         nav: './src/nav.js',
         div: './src/div.js',
-        section: './src/section.js',
         footer: './src/footer.js',
+        article:'./src/article.js',
+        imagesArray:'./src/imagesArray.js',
+        aboutUs:'./src/aboutUs.js',
+        website:'./src/website.js',
+        contactUs:'./src/contactUs.js',
+        menu:'./src/menu.js',
 
     },
     output: {

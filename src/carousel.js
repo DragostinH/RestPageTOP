@@ -1,8 +1,12 @@
 import getImagesArray from "./imagesArray";
+import createDiv from "./div";
 
-export default function carousel() {
+export default function carousel(param) {
+    const imageDiv = createDiv();
+    imageDiv.classList.add('carousel');
+    imageDiv.classList.add('fade');
+    param.insertBefore(imageDiv, content.firstChild);
     const images = getImagesArray();
-    const imageDiv = document.getElementById('main-logo-div');
 
     const interval = setInterval(() => {
         startCarousel();

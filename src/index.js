@@ -2,21 +2,17 @@ import './style.css';
 import Logo from './img/logo.png';
 import createArticle from "./article";
 import createFooter from "./footer";
+import createDiv from './div';
+import createHeader from './header';
+import carousel from './carousel';
 
-export default function home() {
-    const content = document.getElementById('content'); //Main content wrapper 
+export default function home(param) {
     const mainContentDiv = document.getElementById('main-content-div'); //Container for right side of website
-    const mainLogoDiv = document.getElementById('main-logo-div'); // Div for index logo
-    
     const article = createArticle(mainContentDiv); //Wrapper for text inside main-content-div
     const footer = createFooter(mainContentDiv);
-    // const mainLogo = new Image();  
-    // mainLogo.src = Logo;
-    // mainLogo.id = 'index-logo';
     
-    content.appendChild(mainLogoDiv);
-    content.appendChild(mainContentDiv);
-    // mainLogoDiv.appendChild(mainLogo);
+    carousel(param);
+    param.appendChild(mainContentDiv);
 
 
 

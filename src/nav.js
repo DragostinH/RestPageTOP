@@ -1,5 +1,11 @@
+import Logo from './img/logo.png';
 export default function createNav(param) {
+    const logoIcon = new Image();
+    logoIcon.id = 'nav-logo';
+    logoIcon.src = Logo;
     const nav = document.createElement('nav');
+
+
 
     // Creating the Nav buttons and assigning a class to each one
     const homeBtn = document.createElement('button');
@@ -20,10 +26,12 @@ export default function createNav(param) {
     menuBtn.innerText = 'MENU';
     contactUsBtn.innerText = 'CONTACT US';
 
+    nav.appendChild(logoIcon);
     nav.appendChild(homeBtn);
     nav.appendChild(aboutUsBtn);
     nav.appendChild(menuBtn);
     nav.appendChild(contactUsBtn);
+
 
     param.appendChild(nav);
 

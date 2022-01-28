@@ -1,23 +1,24 @@
 import home from ".";
+import aboutUs from "./aboutUs";
 import createHeader from "./header";
 import createNav from "./nav";
-import aboutUs from "./aboutUs";
+import contactUs from "./contactUs";
 
 const webste = (() => {
     const content = document.getElementById('content');
-    const mainLogoDiv = document.getElementById('main-logo-div');
-    const mainContentDiv = document.getElementById('main-content-div');
-    const header = createHeader(mainContentDiv);
-    const nav = createNav(header);
-    home();
-    let childNodesArray = Array.from(mainContentDiv.childNodes);
-    console.log(header);
-    console.log(childNodesArray);
+    const mainContentDiv = document.getElementById('main-content-div'); // Right side content on each page
+    const header = createHeader(mainContentDiv); //Creating the header to add to the main content Div
+    const nav = createNav(header); // ADding the nav bar in the header container
+    home(content); //Loading the main page with each load of the website.
 
+    // All 4 nav buttons for the page.
     const homeBtn = document.getElementById('home-button')
     const aboutUsBtn = document.getElementById('about-us-button');
     const menuBtn = document.getElementById('menu-button');
     const contactUsBtn = document.getElementById('contact-us-button');
+
+
+    // Listeners for each button to change the page.
 
     homeBtn.onclick = () => {
         // Remove all children under the content div apart from the header
@@ -26,10 +27,10 @@ const webste = (() => {
                 mainContentDiv.removeChild(child);
             }
         });
-        // Remove previous image
-        content.removeChild(mainLogoDiv);
-        content.insertBefore(mainLogoDiv, content.firstChild);
-        home();
+
+        content.removeChild(content.firstElementChild);
+
+        home(content);
     }
     aboutUsBtn.onclick = () => {
         // Remove all children under the content div apart from the header
@@ -40,10 +41,8 @@ const webste = (() => {
         });
 
         // Remove previous image
-        // mainLogoDiv.removeChild(mainLogoDiv.lastChild);
-        content.removeChild(mainLogoDiv);
-        content.insertBefore(mainLogoDiv, content.firstChild);
-        aboutUs();
+        content.removeChild(content.firstElementChild);
+        aboutUs(content);
 
     }
     menuBtn.onclick = () => {
@@ -55,12 +54,20 @@ const webste = (() => {
         });
 
         // Remove previous image
-        mainLogoDiv.removeChild(mainLogoDiv.lastChild);
-
+        content.removeChild(content.firstElementChild);
+        menu(content);
     }
     contactUsBtn.onclick = () => {
         // Remove all children under the content div apart from the header
-        alert('chushki');
+        Array.from(mainContentDiv.childNodes).filter(child => {
+            if (child !== header) {
+                mainContentDiv.removeChild(child);
+            }
+        });
+
+        // Remove previous image
+        content.removeChild(content.firstElementChild);
+        contactUs(content);
     }
 
 })();

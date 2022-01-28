@@ -25,6 +25,7 @@ body {
     width: 100%;
     display: flex;
 }
+
 #main-logo-div {
     width: 50%;
     display: flex;
@@ -32,6 +33,9 @@ body {
     justify-content: center;
     flex: 1 1 auto;
     background-color: var(--logo-background-color);
+    background-image: url(./img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -44,6 +48,17 @@ body {
     flex: 1 1 auto;
 }
 
+.about-us-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    background-image: url(./img/AboutUs/about-us1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .main-header {
     display: flex;
     justify-content: center;
@@ -51,7 +66,8 @@ body {
 }
 
 nav button {
-    background-color: var(--page-background-color);
+    background-color: var(--logo-background-color);
+    color: var(--page-background-color);
     border: none;
     padding: 0.5em;
     margin: 1em;
@@ -59,11 +75,19 @@ nav button {
     font-size: medium;
 }
 
-h1{
+
+#nav-logo {
+    background-position: center;
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 1em;
+}
+
+h1 {
     font-size: 40px;
 }
 
-article{
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,7 +96,9 @@ article{
     line-height: 1.5em;
 }
 
-.page-footer{
+.page-footer,
+header,
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,8 +108,23 @@ article{
     background-color: var(--logo-background-color);
 }
 
-.page-footer img{
+.page-footer img {
     width: 40px;
+}
+
+#iframe {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 
@@ -95,31 +136,49 @@ article{
 
 /* EFFECTS ---------------------------------- */
 
-nav button:hover{
+nav button:hover {
     color: var(--logo-text-color);
     cursor: pointer;
 }
 
-.carousel{
+.carousel {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
     background-position: center;
-    /* background-size: cover; */
-    z-index: -1;
-    background-image: url(./img/logo.png);
+    background-size: cover;
+    /* z-index: -1; */
+    /* background-color: var(--logo-background-color); */
+
+    background-image: url(./img/Menu/cooking-sushi1.jpg);
     background-repeat: no-repeat;
 }
 
-.fade{
+.fade {
 
     -webkit-animation: 1.5s fade;
     animation: 1.5s fade;
 
 }
 
-@-webkit-keyframes fade{
-    from{opacity: 0.4}
-    to{opacity: 1}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
 }
-@keyframes fade{
-    from{opacity: 0.4}
-    to{opacity: 1}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
 }

@@ -9,7 +9,7 @@ const webste = (() => {
     const mainContentDiv = document.getElementById('main-content-div'); // Right side content on each page
     const header = createHeader(mainContentDiv); //Creating the header to add to the main content Div
     const nav = createNav(header); // ADding the nav bar in the header container
-    home(content); //Loading the main page with each load of the website.
+    home(content, mainContentDiv); //Loading the main page with each load of the website.
 
     // All 4 nav buttons for the page.
     const homeBtn = document.getElementById('home-button')
@@ -30,7 +30,7 @@ const webste = (() => {
 
         content.removeChild(content.firstElementChild);
 
-        home(content);
+        home(content, mainContentDiv);
     }
     aboutUsBtn.onclick = () => {
         // Remove all children under the content div apart from the header
@@ -42,7 +42,7 @@ const webste = (() => {
 
         // Remove previous image
         content.removeChild(content.firstElementChild);
-        aboutUs(content);
+        aboutUs(content, mainContentDiv);
 
     }
     menuBtn.onclick = () => {
@@ -67,7 +67,7 @@ const webste = (() => {
 
         // Remove previous image
         content.removeChild(content.firstElementChild);
-        contactUs(content);
+        contactUs(content, mainContentDiv);
     }
 
 })();

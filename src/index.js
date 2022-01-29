@@ -2,17 +2,14 @@ import './style.css';
 import Logo from './img/logo.png';
 import createArticle from "./article";
 import createFooter from "./footer";
-import createDiv from './div';
-import createHeader from './header';
 import carousel from './carousel';
 
-export default function home(param) {
-    const mainContentDiv = document.getElementById('main-content-div'); //Container for right side of website
+export default function home(topLevelWrapper, mainContentDiv) {
     const article = createArticle(mainContentDiv); //Wrapper for text inside main-content-div
     const footer = createFooter(mainContentDiv);
     
-    carousel(param);
-    param.appendChild(mainContentDiv);
+    carousel(topLevelWrapper);
+    topLevelWrapper.appendChild(mainContentDiv);
 
 
 

@@ -112,20 +112,54 @@ nav {
     width: 40px;
 }
 
-#iframe {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+
+
+#iFrame{
+    width: 50%;
+    height: 50%;
 }
 
 iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+    width: 100%;
+    height: 200%;
 }
+
+.name-and-email-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-us-form{
+    margin: 1em 0 1em 0;
+    background-color: var(--logo-background-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    box-shadow:2px 2px 7px 2px black;
+}
+
+h4{
+    color: var(--page-background-color);
+    margin: 0.5em 0 0.5em 0;
+}
+
+input,
+label,
+#text-box-div,
+#submit-div{
+    padding: 0.5em;
+}
+textarea{
+    width: 100%;
+}
+#input-subject{
+    width: 100%;
+}
+
+
+
+
 
 
 

@@ -3,6 +3,7 @@ import aboutUs from "./aboutUs";
 import createHeader from "./header";
 import createNav from "./nav";
 import contactUs from "./contactUs";
+import menu from "./menu";
 
 const webste = (() => {
     const content = document.getElementById('content');
@@ -55,7 +56,7 @@ const webste = (() => {
 
         // Remove previous image
         content.removeChild(content.firstElementChild);
-        menu(content);
+        menu(content, mainContentDiv);
     }
     contactUsBtn.onclick = () => {
         // Remove all children under the content div apart from the header

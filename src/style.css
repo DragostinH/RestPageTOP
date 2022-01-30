@@ -113,6 +113,7 @@ nav {
 }
 
 
+/* CONTACT US CSS ----------------------- */
 
 #iFrame{
     width: 50%;
@@ -131,11 +132,12 @@ iframe{
 }
 
 #contact-us-form{
-    margin: 1em 0 1em 0;
+    margin: 1em 0 1em;
     background-color: var(--logo-background-color);
     display: flex;
     flex-direction: column;
     border-radius: 0.5em;
+    border: 1px solid var(--logo-text-color);
     box-shadow:2px 2px 7px 2px black;
 }
 
@@ -150,17 +152,46 @@ label,
 #submit-div{
     padding: 0.5em;
 }
+
 textarea{
     width: 100%;
 }
+
 #input-subject{
     width: 100%;
 }
 
+#input-submit{
+    color: var(--logo-background-color);
+    background-color: var(--page-background-color);
+    border: none;
+    border-radius: 2px;
+    font-size: large;
+    text-align: center;
+}
 
 
 
+/* MENU PAGE CSS ------------------------------- */
 
+#menu-image{
+    width: 50%;
+    background-image: url(./img/Menu/main-menu-page.png);
+    background-color: var(--logo-background-color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+#menu-item-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0.5em 0 0.5em;
+    flex-wrap: wrap;
+}
 
 
 
@@ -169,6 +200,11 @@ textarea{
 
 
 /* EFFECTS ---------------------------------- */
+
+#input-submit:hover{
+    color: var(--logo-text-color);
+    cursor: pointer;
+}
 
 nav button:hover {
     color: var(--logo-text-color);
@@ -183,9 +219,6 @@ nav button:hover {
     flex: 1 1 auto;
     background-position: center;
     background-size: cover;
-    /* z-index: -1; */
-    /* background-color: var(--logo-background-color); */
-
     background-image: url(./img/Menu/cooking-sushi1.jpg);
     background-repeat: no-repeat;
 }

@@ -2,8 +2,8 @@ import createDiv from "./div";
 
 export default function createForm() {
     const form = document.createElement('form');
-    const nameAndEmailDiv = createDiv();
-    nameAndEmailDiv.classList.add('name-and-email-container');
+    const telAndEmailDiv = createDiv();
+    telAndEmailDiv.classList.add('tel-and-email-container');
     form.name = 'contact-us-form';
     form.action = "";
     form.id = 'contact-us-form';
@@ -14,12 +14,13 @@ export default function createForm() {
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
     nameInput.id = "input-name";
-    nameInput.placeholder = 'Name';
+    nameInput.placeholder = 'Michael Scott';
     const nameLabel = document.createElement('label');
     const nameTitle = document.createElement('h4');
     nameTitle.innerText = "Name:*";
     nameLabel.appendChild(nameTitle);
     nameLabel.appendChild(nameInput);
+
     // Email input;
     const emailInput = document.createElement('input');
     emailInput.type = 'email';
@@ -30,12 +31,6 @@ export default function createForm() {
     emailTitle.innerText = "Email:*";
     emailLabel.appendChild(emailTitle);
     emailLabel.appendChild(emailInput);
-
-    // Adding 2 input methods in 1 container
-    nameAndEmailDiv.appendChild(nameLabel);
-    nameAndEmailDiv.appendChild(emailLabel);
-
-
     // Tel number input;
     const telNumberInput = document.createElement('input');
     telNumberInput.type = 'tel';
@@ -46,6 +41,9 @@ export default function createForm() {
     telNumberTitle.innerText = "Tel.:"
     telNumberLabel.appendChild(telNumberTitle);
     telNumberLabel.appendChild(telNumberInput);
+    // Adding 2 input methods in 1 container
+    telAndEmailDiv.appendChild(emailLabel);
+    telAndEmailDiv.appendChild(telNumberLabel);
 
     // Subject input;
     const subjtectInput = document.createElement('input');
@@ -63,6 +61,7 @@ export default function createForm() {
     const textBoxDiv = createDiv();
     textBoxDiv.id = 'text-box-div';
     const textBox = document.createElement('textarea');
+    textBox.rows = 10;
     textBox.name = 'message';
     textBox.id = 'input-message';
     textBox.placeholder = 'Message...';
@@ -79,8 +78,8 @@ export default function createForm() {
     submitDiv.appendChild(submitInput);
 
     // Append it all to the form
-    form.appendChild(nameAndEmailDiv);
-    form.appendChild(telNumberLabel);
+    form.appendChild(nameLabel);
+    form.appendChild(telAndEmailDiv);
     form.appendChild(subjectLabel);
     form.appendChild(textBoxDiv);
     form.appendChild(submitDiv);

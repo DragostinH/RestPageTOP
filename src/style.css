@@ -115,33 +115,51 @@ nav {
 
 /* CONTACT US CSS ----------------------- */
 
-#iFrame{
+#iFrame {
     width: 50%;
     height: 50%;
 }
 
-iframe{
+iframe {
     width: 100%;
     height: 200%;
 }
 
-.name-and-email-container{
+.tel-and-email-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#contact-us-form{
+.tel-and-email-container label{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+#contact-us-form {
     margin: 1em 0 1em;
     background-color: var(--logo-background-color);
     display: flex;
     flex-direction: column;
     border-radius: 0.5em;
     border: 1px solid var(--logo-text-color);
-    box-shadow:2px 2px 7px 2px black;
+    box-shadow: 2px 2px 7px 2px black;
 }
 
-h4{
+#input-name{
+    width: 100%;
+}
+
+#input-email{
+    flex: 1 1 auto;
+}
+
+#input-tel{
+    flex: 1 1 auto;
+}
+
+h4 {
     color: var(--page-background-color);
     margin: 0.5em 0 0.5em 0;
 }
@@ -149,19 +167,19 @@ h4{
 input,
 label,
 #text-box-div,
-#submit-div{
+#submit-div {
     padding: 0.5em;
 }
 
-textarea{
+textarea {
     width: 100%;
 }
 
-#input-subject{
+#input-subject {
     width: 100%;
 }
 
-#input-submit{
+#input-submit {
     color: var(--logo-background-color);
     background-color: var(--page-background-color);
     border: none;
@@ -174,18 +192,35 @@ textarea{
 
 /* MENU PAGE CSS ------------------------------- */
 
-#menu-image{
+#menu-image {
     width: 50%;
     background-image: url(./img/Menu/main-menu-page.png);
     background-color: var(--logo-background-color);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
+
+}
+
+#menu-article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-icon-div{
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    height: 25%;
 }
 
 
-#menu-item-div{
+#menu-item-div {
+    height: 75%;
+    width: 125%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -199,9 +234,13 @@ textarea{
 
 
 
+
+
+
+
 /* EFFECTS ---------------------------------- */
 
-#input-submit:hover{
+#input-submit:hover {
     color: var(--logo-text-color);
     cursor: pointer;
 }
@@ -209,6 +248,11 @@ textarea{
 nav button:hover {
     color: var(--logo-text-color);
     cursor: pointer;
+}
+
+#menu-item-div div:hover{
+    cursor: pointer;
+    
 }
 
 .carousel {

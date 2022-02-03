@@ -23,7 +23,7 @@ export default function contactUs(content, mainContentDiv) {
     content.insertBefore(iFrameDiv, content.firstChild);
 
     article.headline.innerText = 'Contact Us';
-    article.section.innerText = 'If you would like to reach us with any feedback or any complaints, please use either the form below, reach us using our social media channels or give us a call'
+    article.section.innerText = 'If you would like to reach us with any feedback or any complaints, please use either the form below, our social media channels or give us a call'
 
     return { contactUs }
 
